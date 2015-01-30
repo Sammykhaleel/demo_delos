@@ -1,0 +1,4 @@
+<% Project.all.each do |project| %>
+  <%= link_to image_tag("projects/#{project.header.parameterize}.png"), solutions_path(project: project) %>
+<% end %>
+<%= link_to image_tag("projects/browse_all.png"), solutions_path %>
